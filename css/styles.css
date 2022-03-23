@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  width: 100%;
+}
+.container .section-title {
+  color: #444444;
+  font: 500 28px "Raleway", "sans-serif";
+  text-align: center;
+  margin: 25px 0;
+}
+.container .articles {
+  width: 90%;
+  margin: 25px auto;
+  display: grid;
+  gap: 20px;
+}
+.articles article {
+  background-color: #e2e2e2;
+  border-radius: 0.1rem;
+  position: relative;
+  padding: 20px;
+  min-width: 50%;
+  overflow: hidden;
+}
+
+.articles article.sushi {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.articles article .article-title {
+  color: #fafafa;
+  text-transform: capitalize;
+  font: 400 20px "Raleway", "sans-serif";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #2d4263;
+  width: 120px;
+  padding: 7px 0;
+  text-align: center;
+  border-radius: 0 0 0 1rem;
+  border: 1px solid black;
+  border-width: 0 0 1px 1px;
+  box-shadow: 0 0 7px #777;
+  offset-position: bottom 100px;
+}
+.articles article:nth-child(2) .article-title {
+  background-color: #1e5128;
+}
+.articles article:nth-child(3) .article-title {
+  background-color: #950101;
+}
+.articles article .article-description {
+  margin-top: 30px;
+  color: #444444;
+  font: 400 16px "Raleway", "sans-serif";
+  line-height: 1.6;
+}
+
+/* Mobile: < 767px */
+@media (min-width: 767px) {
+  /* default styles */
+}
+
+/* 768 < Tablet < 991px */
+@media (min-width: 768px) {
+
+
+/* Desktop: > 992px */
